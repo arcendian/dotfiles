@@ -1,0 +1,365 @@
+;=========================================================
+;
+;
+;   ██████╗  ██████╗ ██╗  ██╗   ██╗██████╗  █████╗ ██████╗
+;   ██╔══██╗██╔═══██╗██║  ╚██╗ ██╔╝██╔══██╗██╔══██╗██╔══██╗
+;   ██████╔╝██║   ██║██║   ╚████╔╝ ██████╔╝███████║██████╔╝
+;   ██╔═══╝ ██║   ██║██║    ╚██╔╝  ██╔══██╗██╔══██║██╔══██╗
+;   ██║     ╚██████╔╝███████╗██║   ██████╔╝██║  ██║██║  ██║
+;   ╚═╝      ╚═════╝ ╚══════╝╚═╝   ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝
+;
+;
+;   To learn more about how to configure Polybar
+;   go to https://github.com/polybar/polybar
+;
+;   The README contains a lot of information
+;
+;==========================================================
+
+[colors]
+background = ${xrdb:color0:#2E3440}
+background-alt = #434C5E
+foreground = ${xrdb:color7:#D8DEE9}
+foreground-alt = #ECEFF4
+primary = #EBCB8B
+secondary = #BF616A
+alert = #BF616A
+
+[bar/main]
+;monitor = ${env:MONITOR:HDMI-1}
+width = 100%
+height = 27
+;offset-x = 1%
+;offset-y = 1%
+radius = 6.0
+fixed-center = false
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+line-size = 3
+line-color = #f00
+
+border-size = 4
+border-color = #00000000
+
+padding-left = 0
+padding-right = 0
+
+module-margin-left = 1
+module-margin-right = 1
+
+font-0 = JetBrainsMonoMedium:pixelsize=12;1
+font-1 = FiraCode Nerd Font:fontformat=truetype:size=12:antialias=false;0
+;font-2 = NotoColorEmoji:pixelsize=10;1
+
+modules-left = bspwm 
+modules-center = 
+;modules-center = mpd
+;modules-right = memory filesystem cpu wlan eth battery temperature date xkeyboard
+modules-right = eth wlan cpu memory filesystem battery temperature date xkeyboard
+
+tray-position = right
+tray-padding = 2
+;tray-background = #0063ff
+
+wm-restack = bspwm
+;wm-restack = i3
+
+;override-redirect = true
+
+;scroll-up = bspwm-desknext
+;scroll-down = bspwm-deskprev
+
+;scroll-up = i3wm-wsnext
+;scroll-down = i3wm-wsprev
+
+cursor-click = pointer
+cursor-scroll = ns-resize
+
+;[module/xwindow]
+;type = internal/xwindow
+;label = %title:0:30:...%
+
+[module/xkeyboard]
+type = internal/xkeyboard
+blacklist-0 = num lock
+
+format-prefix = " "
+format-prefix-foreground = #e06c75
+;format-prefix-underline = ${colors.secondary}
+
+label-layout = %layout%
+;label-layout-foreground = #e06c75
+
+label-indicator-padding = 2
+label-indicator-margin = 1
+label-indicator-foreground = #e06c75
+;label-indicator-underline = ${colors.secondary}
+
+[module/filesystem]
+type = internal/fs
+interval = 25
+
+mount-0 = /
+
+;label-mounted =  %{F#e5c07b}%mountpoint%%{F-}: %{F#a3be8c}%used%%{F-}
+label-mounted =  %{F#e5c07b}%mountpoint%%{F-}: %used%%
+label-mounted-foreground = #a3be8c
+label-unmounted = %mountpoint% not mounted
+label-unmounted-foreground = ${colors.foreground-alt}
+
+[module/bspwm]
+type = internal/bspwm
+
+; ws-icon-0 = X;  
+; ws-icon-1 = I;  
+; ws-icon-2 = II;  
+; ws-icon-3 = III;ﭮ  
+; ws-icon-4 = IV;  
+; ws-icon-5 = V;  
+; ws-icon-6 = VI;  
+; ws-icon-7 = VII;  
+; ws-icon-8 = VIII;  
+; ws-icon-9 = IX;  
+; 
+; ; ws-icon-0 = ;
+; ; ws-icon-1 = ;
+; ; ws-icon-2 = ;
+; ; ws-icon-3 = ;
+; ; ws-icon-4 = ;
+; ; ws-icon-5 = ;
+; ; ws-icon-6 = ;
+; ; ws-icon-7 = ;
+; ; ws-icon-8 = ;
+; ; ws-icon-9 = ;
+; 
+; ;ws-icon-0 = I;
+; ;ws-icon-1 = II;
+; ;ws-icon-2 = III;
+; ;ws-icon-3 = IV;
+; ;ws-icon-4 = V;
+; ;ws-icon-5 = VI;
+; ;ws-icon-6 = VII;
+; ;ws-icon-7 = VIII;
+; ;ws-icon-8 = IX;
+; ;ws-icon-9 = X;
+; 
+; ws-icon-default = 
+
+label-mode-padding = 1
+label-mode-foreground = ${colors.foreground-alt}
+label-mode-background = ${colors.background-alt}
+
+label-focused = %index%
+label-focused-background = ${colors.background-alt}
+label-focused-foreground = #88c0d0
+#label-focused-underline= #88c0d0
+label-focused-padding = 1
+
+label-occupied = %index%
+label-occupied-padding = 1
+label-occupied-foreground = #6d96a5
+
+label-urgent = %index%!
+label-urgent-background = ${colors.alert}
+label-urgent-padding = 1
+
+label-empty = %index%
+label-empty-foreground = ${colors.foreground-alt}
+label-empty-padding = 1
+
+; Separator in between workspaces
+; label-separator = |
+
+
+[module/mpd]
+type = internal/mpd
+format-online = <label-song>  <icon-prev> <icon-stop> <toggle> <icon-next>
+
+icon-prev = 玲
+icon-stop = 栗
+icon-play = 契
+icon-pause = 
+icon-next = 怜
+
+label-song-maxlen = 35
+label-song-ellipsis = true
+
+[module/cpu]
+type = internal/cpu
+interval = 2
+format-prefix = " "
+format-prefix-foreground = #bf616a
+;label-foreground = #bf616a
+label = %percentage:2%%
+
+[module/memory]
+type = internal/memory
+interval = 2
+format-prefix = " "
+;format-prefix-foreground = ${colors.foreground-alt}
+format-prefix-foreground = #88c0d0
+;format-underline = #88c0d0
+;label-foreground = #88c0d0
+label = %mb_used%
+
+[module/wlan]
+type = internal/network
+interface = wlp0s20f3
+interval = 3.0
+
+;format-connected = <ramp-signal> <label-connected>
+format-connected = <label-connected>
+;format-connected-underline = #b48ead
+;label-connected = %essid%
+label-connected-foreground = #b48ead
+label-connected =    
+
+format-disconnected = 睊
+;format-disconnected = <label-disconnected>
+;format-disconnected-underline = ${self.format-connected-underline}
+;label-disconnected = %ifname% disconnected
+;label-disconnected-foreground = ${colors.foreground-alt}
+
+ramp-signal-0 = 直 
+ramp-signal-1 = 直 
+ramp-signal-2 = 直 
+ramp-signal-3 =   
+ramp-signal-4 =   
+;ramp-signal-foreground = ${colors.foreground-alt}
+ramp-signal-foreground = #b48ead
+
+[module/eth]
+type = internal/network
+interface = enp1s0
+interval = 3.0
+
+;format-connected-underline = #809575
+format-connected-prefix = 
+format-connected-prefix-foreground = #809575
+;label-connected = %local_ip%
+label-connected =  
+label-connected-foreground = #809575
+
+;format-disconnected = 
+format-disconnected =  
+format-disconnected-foreground = #BF616A
+;format-disconnected = <label-disconnected>
+;format-disconnected-underline = ${self.format-connected-underline}
+;label-disconnected = %ifname% disconnected
+;label-disconnected-foreground = ${colors.foreground-alt}
+
+[module/date]
+type = internal/date
+interval = 5
+
+date =
+date-alt = " %Y-%m-%d"
+
+time = %H:%M
+time-alt = %H:%M:%S
+
+format-prefix = 
+format-prefix-foreground = #81a1c1
+;format-underline = #81a1c1
+
+;label-foreground = #81a1c1
+label = %date% %time%
+
+; [module/alsa]
+; type = internal/alsa
+; 
+; format-volume = <label-volume> <bar-volume>
+; label-volume = VOL
+; label-volume-foreground = ${root.foreground}
+; 
+; format-muted-prefix = "ﱝ "
+; format-muted-foreground = ${colors.foreground-alt}
+; label-muted = sound muted
+; 
+; bar-volume-width = 10
+; bar-volume-foreground-0 = #a3be8c
+; bar-volume-foreground-1 = #a3be8c
+; bar-volume-foreground-2 = #a3be8c
+; bar-volume-foreground-3 = #a3be8c
+; bar-volume-foreground-4 = #a3be8c
+; bar-volume-foreground-5 = #ebcb8b
+; bar-volume-foreground-6 = #bf616a
+; bar-volume-gradient = false
+; bar-volume-indicator = |
+; bar-volume-indicator-font = 2
+; bar-volume-fill = ─
+; bar-volume-fill-font = 2
+; bar-volume-empty = ─
+; bar-volume-empty-font = 2
+; bar-volume-empty-foreground = ${colors.foreground-alt}
+
+[module/battery]
+type = internal/battery
+battery = BAT0
+adapter = AC
+full-at = 98
+
+format-charging = <animation-charging> <label-charging>
+format-charging-foreground = #ebcb8b
+;format-charging-underline = #ebcb8b
+
+format-discharging = <animation-discharging> <label-discharging>
+format-discharging-underline = ${self.format-charging-underline}
+
+format-full-prefix = " "
+format-full-prefix-foreground = ${colors.foreground-alt}
+;format-full-underline = ${self.format-charging-underline}
+
+ramp-capacity-0 =   
+ramp-capacity-1 =   
+ramp-capacity-2 =   
+ramp-capacity-foreground = ${colors.foreground-alt}
+
+animation-charging-0 =  
+animation-charging-1 =  
+animation-charging-2 =  
+animation-charging-foreground = #ebcb8b
+animation-charging-framerate = 750
+
+animation-discharging-0 = ﴇ
+animation-discharging-1 = ﴉ  
+animation-discharging-2 = ﴌ  
+animation-discharging-foreground = #d08770
+animation-discharging-framerate = 750
+
+[module/temperature]
+type = internal/temperature
+thermal-zone = 0
+warn-temperature = 60
+
+format = <ramp> <label>
+format-foreground = #94545d
+format-warn = <ramp> <label-warn>
+;format-warn-underline = ${self.format-underline}
+format-warn-foreground = #94545d
+
+label = %temperature-c%
+label-warn = %temperature-c%
+label-warn-foreground = #94545d
+
+ramp-0 =   
+ramp-1 =     
+;ramp-1 =   
+ramp-2 =   
+ramp-foreground = #94545d
+
+[settings]
+screenchange-reload = true
+;compositing-background = xor
+;compositing-background = screen
+;compositing-foreground = source
+;compositing-border = over
+pseudo-transparency = false
+
+[global/wm]
+margin-top = 0
+margin-bottom = 0
+
+; vim:ft=dosini

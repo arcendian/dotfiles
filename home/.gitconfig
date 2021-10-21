@@ -1,0 +1,11 @@
+[user]
+	name = "Michael Espeña"
+	email = michael.esp42@protonmail.com
+[core]
+	editor = nvim
+[color]
+	ui = true
+[init]
+	defaultBranch = main
+[credential]
+	helper = cache
