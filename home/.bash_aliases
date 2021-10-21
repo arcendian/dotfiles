@@ -5,7 +5,7 @@
 #   █▄▄█  █        █     █▄▄█      ▀█ █          ▀█
 #  █    █ █▄▄▄▄▄ ▄▄█▄▄  █    █ ▀▄▄▄█▀ █▄▄▄▄▄ ▀▄▄▄█▀
 # 
-# Michael Espeña (https://gitlab.com/Arcendian/dotfiles)
+# Michael Espeña (https://github.com/Arcendian/dotfiles)
 
 # default aliases from /etc/skel
 alias grep='grep --color=auto'
