@@ -1,6 +1,8 @@
-#
-# wm independent hotkeys
-#
+#   ▄▄▄▄  ▄    ▄ ▄    ▄ ▄    ▄ ▄▄▄▄   ▄▄▄▄▄    ▄▄▄ 
+#  █▀   ▀  █  █  █    █ █  ▄▀  █   ▀▄ █   ▀█ ▄▀   ▀
+#  ▀█▄▄▄    ██   █▄▄▄▄█ █▄█    █    █ █▄▄▄▄▀ █     
+#      ▀█  ▄▀▀▄  █    █ █  █▄  █    █ █   ▀▄ █     
+#  ▀▄▄▄█▀ ▄▀  ▀▄ █    █ █   ▀▄ █▄▄▄▀  █    ▀  ▀▄▄▄▀
 
 #
 # wm independent hotkeys
@@ -132,11 +134,16 @@ super + {Left,Down,Up,Right}
 super + u
 	tdrop -w 60% -h 50% -y 20% -x 20% -a alacritty -e ncmpcpp
 
+# launch podcast client
+super + alt + g
+	tdrop -w 65% -h 55% -y 20% -x 20% -a alacritty -e castero
+
+# launch ani-cli
+super + ctrl + a
+	tdrop -w 60% -h 50% -y 20% -x 20% -a alacritty -e ani-cli
 
 # launch web browser
 super + alt + b
-	librewolf
-super + ctrl + b
 	brave
 super + shift + b
 	qutebrowser
@@ -152,10 +159,6 @@ super + alt + f
 # lockscreen
 super + ctrl + alt + l
 	betterlockscreen -l blur
-
-# launch podcast client
-super + alt + g
-	tdrop -w 65% -h 55% -y 20% -x 20% -a alacritty -e castero
 
 # ytfzf keybindings
 # search for youtube and play
