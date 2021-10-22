@@ -23,15 +23,30 @@ alias lt='exa --tree --icons'
 alias lD='exa --only-dirs --icons'
 alias lDa='exa --only-dirs --all --icons'
 
-# changing directory to rustling working directory
-# alias rustling='cd /home/mice/.repos/applications/rustlings'
-
 # for git bare repository for my dotfiles
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.local/share/dotfiles --work-tree=$HOME'
 
 # LOL!
 alias nano='$(which vim)'
 
-# crypt='curl rate.sx/'
-alias thumbnail='youtube-dl --write-thumbnail --skip-download'
+# check cryptocurrency rates
+alias crypt='curl rate.sx/'
+
+# download to mp3.
 alias yta='youtube-dl --ignore-errors --output "%(title)s.%(ext)s" --extract-audio --audio-format mp3'
+
+# clipboard aliases
+# copy path to cliboard
+alias cpp="find -type f | fzf | sed 's/^..//' | tr -d '\n' | xclip -selection c"
+alias cin="xclip -selection clipboard -c"
+alias cout="xclip -selection clipboard -o"
+
+# find a path and cd into it
+fcd() {
+	cd "$(find -type d | fzf)"
+}
+
+# find a file and open in it in preferred application
+open() {
+	xdg-open "$(find -type f | fzf)"
+}
