@@ -38,9 +38,6 @@ export STARSHIP_CONFIG="$HOME/.config/starship/starship_config.toml"
 # npm
 export npm_config_prefix="$HOME/.local"
 
-# emacs bin
-export PATH="$HOME/.emacs.d/bin:$PATH"
-
 # gpg homedir
 # export GNUPGHOME="$HOME/.config/gnupg"
 
@@ -54,8 +51,8 @@ export LESS_TERMCAP_ue=$'\e[0m'
 export LESS_TERMCAP_us=$'\e[1;4;31m'
 
 # c/c++ include paths when programming avr
-#export C_INCLUDE_PATH=${C_INCLUDE_PATH}:/usr/avr/include
-#export CPLUS_INCLUDE_PATH=${CPLUS_INCLUDE_PATH}:/usr/avr/include
+export C_INCLUDE_PATH=${C_INCLUDE_PATH}:/usr/avr/include
+export CPLUS_INCLUDE_PATH=${CPLUS_INCLUDE_PATH}:/usr/avr/include
 
 # sourcing section
 

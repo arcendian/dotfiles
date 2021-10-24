@@ -1,14 +1,7 @@
 #! /bin/sh
 
 # things to launch at start of wm
-setxkbmap us &
-mpd &
-xsetroot -cursor_name left_ptr &
-xrandr --output eDP-1 --mode 1920x1080 &
-fc-list | grep -i siji || fc-cache -fv &
-picom &
 pgrep -x sxhkd > /dev/null || sxhkd &
-feh --bg-scale --recursive --random $HOME/.local/share/wallpapers/nord/* &
 $HOME/.config/polybar/launch.sh &
 
 bspc monitor -d I II III IV V VI VII VIII IX X
