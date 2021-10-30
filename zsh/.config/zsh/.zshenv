@@ -29,6 +29,9 @@ export GOPATH="$HOME/.local/go"
 # add go bin to path
 export PATH="$HOME/.local/go/bin:$PATH"
 
+# add go bin to path
+export PATH="$HOME/.emacs.d/bin:$PATH"
+
 # set bat colorscheme
 export BAT_THEME=Nord
 
@@ -37,9 +40,6 @@ export STARSHIP_CONFIG="$HOME/.config/starship/starship_config.toml"
 
 # npm
 export npm_config_prefix="$HOME/.local"
-
-# gpg homedir
-# export GNUPGHOME="$HOME/.config/gnupg"
 
 # enable colors for man pages
 export LESS_TERMCAP_mb=$'\e[1;32m'
