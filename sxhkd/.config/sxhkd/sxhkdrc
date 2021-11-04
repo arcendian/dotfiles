@@ -24,6 +24,7 @@ super + @space
 super + Escape
 	pkill -USR1 -x sxhkd
 
+
 #
 # bspwm hotkeys
 #
@@ -158,14 +159,14 @@ super + alt + p
 
 # file manager
 super + alt + f
-    pcmanfm
+	pcmanfm
 
 # lockscreen
 super + ctrl + alt + l
 	betterlockscreen -l blur
 
 # open file
-super + ctrl + alt + o
+super + alt + o
 	dmopen
 
 # ytfzf keybindings
@@ -173,7 +174,7 @@ super + ctrl + alt + o
 super + alt + y
 	ytfzf -D
 
-# ytfzf audio-only (use youtube as spotify LOL!)
+# ytfzf audio-only 
 super + alt + a
 	ytfzf -mD
 

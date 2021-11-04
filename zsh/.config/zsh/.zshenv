@@ -54,6 +54,9 @@ export LESS_TERMCAP_us=$'\e[1;4;31m'
 export C_INCLUDE_PATH=${C_INCLUDE_PATH}:/usr/avr/include
 export CPLUS_INCLUDE_PATH=${CPLUS_INCLUDE_PATH}:/usr/avr/include
 
+# export terminal
+export TERMINAL=alacritty
+
 # sourcing section
 
 # enable syntax highlighting for zsh
