@@ -28,8 +28,8 @@ set scrolloff=8
 set guicursor=
 set ft=nasm
 set nocompatible
-" set number
-" set relativenumber
+set number
+set relativenumber
 " set nohlsearch
 " set laststatus=2
 " set cursorline
