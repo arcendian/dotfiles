@@ -10,9 +10,9 @@
 
 # terminal emulator
 super + Return
-	alacritty
-super + p
 	kitty
+super + p
+	alacritty
 super + shift + p
 	st
 
@@ -137,15 +137,15 @@ super + {Left,Down,Up,Right}
 
 # launch ncmpcpp in tdrop scratchpad
 super + u
-	tdrop -w 60% -h 70% -y 20% -x 20% -a alacritty -e ncmpcpp
+	tdrop -w 60% -h 70% -y 20% -x 20% -a kitty -e ncmpcpp
 
 # launch podcast client
 super + alt + g
-	tdrop -w 65% -h 55% -y 20% -x 20% -a alacritty -e castero
+	tdrop -w 65% -h 55% -y 20% -x 20% -a kitty -e castero
 
 # launch ani-cli
 super + ctrl + a
-	tdrop -w 60% -h 50% -y 20% -x 20% -a alacritty -e ani-cli
+	tdrop -w 60% -h 50% -y 20% -x 20% -a kitty -e ani-cli
 
 # launch web browser
 super + alt + b

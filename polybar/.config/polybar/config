@@ -53,7 +53,7 @@ modules-left = bspwm
 ;modules-center = 
 modules-center = mpd
 ;modules-right = memory filesystem cpu wlan eth battery temperature date xkeyboard
-modules-right = eth wlan cpu memory filesystem battery temperature date xkeyboard
+modules-right = eth wlan cpu memory filesystem battery temperature date
 
 tray-position = right
 tray-padding = 2
