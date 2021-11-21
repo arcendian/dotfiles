@@ -24,7 +24,8 @@ set undofile
 set incsearch
 set exrc
 set hidden
-set scrolloff=8
+set scrolloff=999
+set sidescrolloff=999
 set guicursor=
 set ft=nasm
 set nocompatible
@@ -166,7 +167,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'arcticicestudio/nord-vim'
 call plug#end()
 
-colorscheme nord
+colorscheme nord   
 
 " set  background color to none
 hi Normal ctermbg=NONE
@@ -179,3 +180,5 @@ hi Normal ctermbg=NONE
 " remove the annoying tilde characters in empty lines
 " end of buffer(EOB)
 let &fcs='eob: '
+
+ab myemail michaelespena.public@gmail.com

@@ -49,10 +49,10 @@ alias cout="xclip -selection clipboard -o"
 
 # find a path and cd into it
 fcd() {
-	cd "$(find -type d | fzf)"
+	cd "$(fd --type d | fzf)"
 }
 
 # find a file and open in it in preferred application
 open() {
-	devour xdg-open "$(find -type f | fzf)"
+	devour xdg-open "$(fd --hidden --type f | fzf)"
 }

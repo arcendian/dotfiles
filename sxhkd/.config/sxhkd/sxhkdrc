@@ -149,9 +149,11 @@ super + ctrl + a
 
 # launch web browser
 super + alt + b
-	brave
+	librewolf
 super + shift + b
 	qutebrowser
+super + ctrl + b
+    brave
 
 # passmenu
 super + alt + p

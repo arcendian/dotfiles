@@ -19,7 +19,6 @@ export PATH=$HOME/.emacs.d/bin:$PATH
 # export C_INCLUDE_PATH=${C_INCLUDE_PATH}:/usr/avr/include
 # export CPLUS_INCLUDE_PATH=${CPLUS_INCLUDE_PATH}:/usr/avr/include
 
-# alias ls='ls --color=auto'
 alias ls='exa'
 alias grep='grep --color=auto'
 alias egrep='egrep --color=auto'
@@ -30,7 +29,6 @@ then
 	. ~/.bash_aliases
 fi
 
-# activate nord dircolors
 # NOTE: ~/.dir_colors to nord-dircolors develop branch
 test -r ~/.dir_colors && eval $(dircolors ~/.dir_colors)
 
