@@ -33,7 +33,6 @@ export LESS_TERMCAP_us=$'\e[1;4;31m'
 #export C_INCLUDE_PATH=${C_INCLUDE_PATH}:/usr/avr/include
 #export CPLUS_INCLUDE_PATH=${CPLUS_INCLUDE_PATH}:/usr/avr/include
 
-
 # sourcing section
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh 2>/dev/null

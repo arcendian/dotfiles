@@ -120,12 +120,6 @@ endif
 " set leader key
 let mapleader = " "
 
-" Remap splits navigation to just CTRL + hjkl
-nnoremap <C-h> <C-w>h
-nnoremap <C-j> <C-w>j
-nnoremap <C-k> <C-w>k
-nnoremap <C-l> <C-w>l
-
 " Remap resizing splits to simple keybindings 
 " to avoid using command mode
 nnoremap <silent> <C-Right> :vertical resize +3<CR>
@@ -156,12 +150,12 @@ au CursorHoldI * stopinsert
 au InsertEnter * let updaterestore=&updatetime | set updatetime=4000
 au InsertLeave * let &updatetime=updaterestore
 
-set shortmess=F
-set noshowmode
-set noruler
-set laststatus=0
-set noshowcmd
-set cmdheight=1
+" set shortmess=F
+" set noshowmode
+" set noruler
+" set laststatus=0
+" set noshowcmd
+" set cmdheight=1
 
 call plug#begin('~/.vim/plugged')
 Plug 'arcticicestudio/nord-vim'

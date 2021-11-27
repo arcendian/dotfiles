@@ -9,6 +9,7 @@
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
+
 export EDITOR=nvim
 export PATH=$HOME/.local/bin:$PATH
 export GOPATH=$HOME/.local/go
