@@ -1,10 +1,10 @@
-# 
+#
 #    ▄▄   ▄      ▄▄▄▄▄    ▄▄    ▄▄▄▄  ▄▄▄▄▄▄  ▄▄▄▄
 #    ██   █        █      ██   █▀   ▀ █      █▀   ▀
 #   █  █  █        █     █  █  ▀█▄▄▄  █▄▄▄▄▄ ▀█▄▄▄
 #   █▄▄█  █        █     █▄▄█      ▀█ █          ▀█
 #  █    █ █▄▄▄▄▄ ▄▄█▄▄  █    █ ▀▄▄▄█▀ █▄▄▄▄▄ ▀▄▄▄█▀
-# 
+#
 # Michael Espeña (https://gitlab.com/Arcendian/dotfiles)
 
 # default aliases from /etc/skel
@@ -32,9 +32,6 @@ alias s='devour sxiv'
 # for git bare repository for my dotfiles
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.local/share/dotfiles --work-tree=$HOME'
 
-# LOL!
-alias nano='$(which vim)'
-
 # check cryptocurrency rates
 alias crypt='curl rate.sx/'
 
@@ -49,10 +46,10 @@ alias cout="xclip -selection clipboard -o"
 
 # find a path and cd into it
 fcd() {
-	cd "$(fd --type d | fzf)"
+    cd "$(fd --type d | fzf)"
 }
 
 # find a file and open in it in preferred application
 open() {
-	devour xdg-open "$(fd --hidden --type f | fzf)"
+    devour xdg-open "$(fd --hidden --type f | fzf)"
 }
