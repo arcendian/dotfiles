@@ -159,12 +159,15 @@ au InsertLeave * let &updatetime=updaterestore
 
 call plug#begin('~/.vim/plugged')
 Plug 'arcticicestudio/nord-vim'
+Plug 'gruvbox-community/gruvbox'
+Plug 'iandwelker/rose-pine-vim'
 call plug#end()
 
-colorscheme nord   
+" set background=dark
+colorscheme nord
 
 " set  background color to none
-hi Normal ctermbg=NONE
+" hi Normal ctermbg=NONE
 " hi LineNr ctermbg=NONE guibg=NONE
 " hi Comment ctermfg=darkgray guifg=darkgray
 " hi SignColumn ctermbg=NONE
