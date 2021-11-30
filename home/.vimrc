@@ -159,8 +159,6 @@ au InsertLeave * let &updatetime=updaterestore
 
 call plug#begin('~/.vim/plugged')
 Plug 'arcticicestudio/nord-vim'
-Plug 'gruvbox-community/gruvbox'
-Plug 'iandwelker/rose-pine-vim'
 call plug#end()
 
 " set background=dark
