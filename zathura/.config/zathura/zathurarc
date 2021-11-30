@@ -1,22 +1,25 @@
 set window-title-basename "true"
 set selection-clipboard "clipboard"
 
-set default-bg                  "#D8DEE9"
-set default-fg                  "#3B4252"
+set font "Ubuntu Mono 12"
+set guioptions none
 
-set statusbar-fg                "#D8DEE9"
-set statusbar-bg                "#434C5E"
+set default-fg                  "#D8DEE9"
+set default-bg                  "#3B4252"
 
-set inputbar-bg                 "#D8DEE9"
+set statusbar-bg                "#81A1C1"
+set statusbar-fg                "#434C5E"
+
+set inputbar-bg                 "#3B4252"
 set inputbar-fg                 "#8FBCBB"
 
-set notification-bg             "#D8DEE9"
+set notification-bg             "#3B4252"
 set notification-fg             "#8FBCBB"
 
-set notification-error-bg       "#D8DEE9"
+set notification-error-bg       "#3B4252"
 set notification-error-fg       "#BF616A"
 
-set notification-warning-bg     "#D8DEE9"
+set notification-warning-bg     "#3B4252"
 set notification-warning-fg     "#BF616A"
 
 set highlight-color             "#EBCB8B"
@@ -30,21 +33,21 @@ set completion-group-fg         "#81A1C1" # Comment
 set completion-highlight-fg     "#8FBCBB"
 set completion-highlight-bg     "#81A1C1"
 
-set recolor-lightcolor          "#D8DEE9"
-set recolor-darkcolor           "#2E3440"
+set recolor-darkcolor			 "#D8DEE9"
+set recolor-lightcolor           "#2E3440"
 
 set recolor                     "true"
 set recolor-keephue             "true"
 
 
-set index-bg                    "#D8DEE9" # Background
-set index-fg                    "#2E3440" # Foreground
-set index-active-bg             "#44475a" # Current Line
-set index-active-fg             "#E5E9F0" # Foreground
+set index-fg                    "#D8DEE9" # Background
+set index-bg                    "#2E3440" # Foreground
+set index-active-fg             "#44475a" # Current Line
+set index-active-bg             "#E5E9F0" # Foreground
 
 set render-loading              true
-set render-loading-fg           "#D8DEE9" # Background
-set render-loading-bg           "#2E3440" # Foreground
+set render-loading-bg           "#D8DEE9" # Background
+set render-loading-fg           "#2E3440" # Foreground
 
 set adjust-open width
 
