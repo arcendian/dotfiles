@@ -5,7 +5,7 @@
 #   ▄▀▀▄    █    █  █ █   █      █    █   ▀▄ █     
 #  ▄▀  ▀▄ ▄▄█▄▄  █   ██ ▄▄█▄▄    █    █    ▀  ▀▄▄▄▀
 # 
-# Michael Espeña (https://gitlab.com/Arcendian/dotfiles)
+# Michael Espeña (https://github.com/Arcendian/dotfiles)
 
 userresources=$HOME/.Xresources
 usermodmap=$HOME/.Xmodmap
