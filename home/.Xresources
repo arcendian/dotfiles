@@ -55,3 +55,8 @@
 *.color13: nord15
 *.color14: nord7
 *.color15: nord6
+
+! sxiv configuration
+Sxiv.foreground:   #88C0D0
+Sxiv.background:   #2E3440
+Sxiv.font: Ubuntu:style=bold:size=12
