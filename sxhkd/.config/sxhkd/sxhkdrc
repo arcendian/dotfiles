@@ -140,12 +140,16 @@ super + u
 	tdrop -w 60% -h 70% -y 20% -x 20% -a st -e ncmpcpp
 
 # launch podcast client
-super + alt + g
-	tdrop -w 65% -h 55% -y 20% -x 20% -a st -e castero
+# super + alt + g
+# 	tdrop -w 65% -h 55% -y 20% -x 20% -a st -e castero
 
 # launch ani-cli
 super + ctrl + a
 	tdrop -w 60% -h 50% -y 20% -x 20% -a st -e ani-cli
+
+# download neovim nightly
+super + alt + n
+	tdrop -w 60% -h 50% -y 20% -x 20% -a alacritty -e download-nvim-nightly
 
 # launch web browser
 super + alt + b
@@ -182,7 +186,7 @@ super + alt + a
 
 # change wallpapers
 super + alt + c
-	feh --bg-scale --random --recursive $HOME/.local/share/wallpapers/nord/*
+	feh --bg-scale --random --recursive $HOME/.local/share/wallpapers/*
 
 # screenshot
 Print
