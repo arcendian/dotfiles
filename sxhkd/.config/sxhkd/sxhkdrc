@@ -194,7 +194,7 @@ Print
 
 # launch emacs
 super + shift + Return
-	emacsclient -c -a 'emacs'
+	start-emacs
 
 # backlight control
 XF86MonBrightnessUp
