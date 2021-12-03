@@ -24,10 +24,10 @@ alias lD='exa --only-dirs --icons'
 alias lDa='exa --only-dirs --all --icons'
 
 # does your window manager swallow?
-alias d='devour'
-alias v='devour mpv'
-alias z='devour zathura'
-alias s='devour sxiv'
+alias dev='devour'
+alias vid='devour mpv'
+alias zat='devour zathura'
+alias sx='devour sxiv'
 
 # for git bare repository for my dotfiles
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.local/share/dotfiles --work-tree=$HOME'
