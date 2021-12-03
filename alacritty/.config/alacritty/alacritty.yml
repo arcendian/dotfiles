@@ -26,7 +26,7 @@ font:
   size: 8.5
 
 import:
-  - ~/.config/alacritty/themes/nord.yml
+  - ~/.config/alacritty/themes/onenord.yml
 
 background_opacity: 1.0
 
