@@ -1,11 +1,11 @@
-# 
+#!/bin/zsh
 #  ▄▄▄▄▄▄  ▄▄▄▄  ▄    ▄ ▄▄▄▄▄    ▄▄▄
 #      █▀ █▀   ▀ █    █ █   ▀█ ▄▀   ▀
 #    ▄█   ▀█▄▄▄  █▄▄▄▄█ █▄▄▄▄▀ █
 #   ▄▀        ▀█ █    █ █   ▀▄ █
 #  ██▄▄▄▄ ▀▄▄▄█▀ █    █ █    ▀  ▀▄▄▄▀
-# 
-# Michael Espeña (https://github.com/JustAnotherJerry/.dotfiles)
+#
+# Michael Espeña (https://github.com/Arcendian/.dotfiles)
 
 # Enable colors
 autoload -U colors && colors
