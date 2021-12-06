@@ -10,7 +10,7 @@
 # exporting section
 export ZDOTDIR=$HOME/.config/zsh
 export EDITOR=nvim
-export BROWSER=chromium
+export BROWSER=brave
 export PATH="${HOME}/.local/bin:${PATH}"
 export PATH="${HOME}/.cargo/bin:${PATH}"
 export GOPATH="$HOME/.local/go"
