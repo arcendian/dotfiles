@@ -153,11 +153,9 @@ super + alt + n
 
 # launch web browser
 super + alt + b
-	brave
+	chromium
 super + shift + b
 	qutebrowser
-super + ctrl + b
-    chromium
 
 # passmenu
 super + alt + p
