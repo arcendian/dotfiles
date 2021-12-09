@@ -21,7 +21,6 @@ export STARSHIP_CONFIG="$HOME/.config/starship/starship_config.toml"
 export npm_config_prefix="$HOME/.local"
 export TERMINAL=kitty
 export FZF_DEFAULT_COMMAND="find -L"
-export GIT_ASKPASS="$HOME/.local/bin/gitpass"
 
 export LESS_TERMCAP_mb=$'\e[1;32m'
 export LESS_TERMCAP_md=$'\e[1;32m'
