@@ -23,3 +23,6 @@ alias lDa='exa --only-dirs --all --icons'
 
 alias thumbnail='youtube-dl --write-thumbnail --skip-download'
 alias yta='youtube-dl --ignore-errors --output "%(title)s.%(ext)s" --extract-audio --audio-format mp3'
+
+# fzf files and then open in nvim
+alias nfzf='nv `fzf --preview="bat --color always {}"`'

@@ -5,7 +5,7 @@
 #   █▄▄█  █        █     █▄▄█      ▀█ █          ▀█
 #  █    █ █▄▄▄▄▄ ▄▄█▄▄  █    █ ▀▄▄▄█▀ █▄▄▄▄▄ ▀▄▄▄█▀
 #
-# Michael Espeña (https://gitlab.com/Arcendian/dotfiles)
+# Michael Espeña (https://github.com/Arcendian/dotfiles)
 
 # default aliases from /etc/skel
 alias grep='grep --color=auto'
@@ -43,6 +43,9 @@ alias yta='youtube-dl --ignore-errors --output "%(title)s.%(ext)s" --extract-aud
 alias cpp="find -type f | fzf | sed 's/^..//' | tr -d '\n' | xclip -selection c"
 alias cin="xclip -selection clipboard -c"
 alias cout="xclip -selection clipboard -o"
+
+# fzf files and then open in nvim
+alias nfzf='nv `fzf --preview="bat --color always {}"`'
 
 # find a path and cd into it
 fcd() {

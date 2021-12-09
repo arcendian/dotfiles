@@ -10,8 +10,8 @@ disabled = false
 
 # Replace the "❯" symbol in the prompt with "➜"
 [character] # The name of the module we are configuring is "character"
-success_symbol = "[micmic](bold green) on [ ](bold blue)"
-error_symbol = "[micmic](bold green) on [ ](bold red)"
+success_symbol = "[ ](bold blue)"
+error_symbol = "[ ](bold red)"
 
 [cmd_duration]
 disabled = true
