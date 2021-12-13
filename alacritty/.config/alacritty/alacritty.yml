@@ -28,7 +28,7 @@ font:
 import:
   - ~/.config/alacritty/themes/onenord.yml
 
-background_opacity: 0.80
+background_opacity: 0.85
 
 window:
   dimensions:
