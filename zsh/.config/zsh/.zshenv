@@ -5,7 +5,7 @@
 #   ▄▀        ▀█ █    █ █      █  █ █  ▀▄▄▀
 #  ██▄▄▄▄ ▀▄▄▄█▀ █    █ █▄▄▄▄▄ █   ██   ██
 #
-# Michael Espeña (https://github.com/Arcendian/.dotfiles)
+# Michael Espeña (https://github.com/paperbackwryter/.dotfiles)
 
 # exporting section
 export ZDOTDIR=$HOME/.config/zsh

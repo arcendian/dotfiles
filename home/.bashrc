@@ -5,7 +5,7 @@
 #  █    █  █▄▄█      ▀█ █    █ █   ▀▄ █
 #  █▄▄▄▄▀ █    █ ▀▄▄▄█▀ █    █ █    ▀  ▀▄▄▄▀
 # 
-# Michael Espeña (https://github.com/Arcendian/dotfiles)
+# Michael Espeña (https://github.com/paperbackwryter/dotfiles)
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return

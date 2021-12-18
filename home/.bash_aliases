@@ -5,7 +5,7 @@
 #   █▄▄█  █        █     █▄▄█      ▀█ █          ▀█
 #  █    █ █▄▄▄▄▄ ▄▄█▄▄  █    █ ▀▄▄▄█▀ █▄▄▄▄▄ ▀▄▄▄█▀
 # 
-# Michael Espeña (https://github.com/Arcendian/dotfiles)
+# Michael Espeña (https://github.com/paperbackwryter/dotfiles)
 
 alias grep='grep --color=auto'
 alias egrep='egrep --color=auto'

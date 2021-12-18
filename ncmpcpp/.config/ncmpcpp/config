@@ -4,7 +4,7 @@
 # █  █ █ █      █ ▀▀ █ █      █      █      █     
 # █   ██  ▀▄▄▄▀ █    █ █       ▀▄▄▄▀ █      █     
 #                                                 
-# Michael Espeña (https://github.com/Arcendian/dotfiles)
+# Michael Espeña (https://github.com/paperbackwryter/dotfiles)
 
 ncmpcpp_directory = ~/.config/ncmpcpp
 lyrics_directory = ~/.local/share/lyrics

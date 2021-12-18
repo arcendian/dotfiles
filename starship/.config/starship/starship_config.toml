@@ -14,7 +14,7 @@ success_symbol = "[ ](bold blue)"
 error_symbol = "[ ](bold red)"
 
 [cmd_duration]
-disabled = true
+disabled = false
 
 [battery]
 disabled = true
@@ -105,7 +105,7 @@ disabled = true
 
 [python]
 disabled = true
-#
+
 [red]
 disabled = true
 
