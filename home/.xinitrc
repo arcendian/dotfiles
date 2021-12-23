@@ -5,7 +5,7 @@
 #   ▄▀▀▄    █    █  █ █   █      █    █   ▀▄ █     
 #  ▄▀  ▀▄ ▄▄█▄▄  █   ██ ▄▄█▄▄    █    █    ▀  ▀▄▄▄▀
 # 
-# Michael Espeña (https://github.com/paperbackwryter/dotfiles)
+# Michael Espeña (https://gitlab.com/paperbackwriter/dotfiles)
 
 userresources=$HOME/.Xresources
 usermodmap=$HOME/.Xmodmap
