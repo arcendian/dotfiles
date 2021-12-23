@@ -14,7 +14,7 @@ success_symbol = "[ ](bold blue)"
 error_symbol = "[ ](bold red)"
 
 [cmd_duration]
-disabled = false
+disabled = true
 
 [battery]
 disabled = true
@@ -131,4 +131,7 @@ disabled = true
 disabled = true
 
 [vagrant]
+disabled = true
+
+[zig]
 disabled = true
