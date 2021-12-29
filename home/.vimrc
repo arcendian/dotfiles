@@ -31,13 +31,20 @@ set ft=nasm
 set nocompatible
 set number
 set relativenumber
+set list
+set showbreak =↪\ 
+set listchars=tab:»\ ,extends:›,precedes:‹,nbsp:·,trail:·,eol:↴
+"set list listchars=tab:▸\ ,trail:·,precedes:←,extends:→,nbsp:·,eol:↴
 " set nohlsearch
 " set laststatus=2
 " set cursorline
 
 syntax on
 syntax enable
-highlight Normal ctermbg=None
+
+if (has('termguicolors'))
+  set termguicolors
+endif
 
 "hi CursorLine cterm=NONE ctermbg=gray ctermfg=white guibg=gray guifg=white
 "hi CursorColumn cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
@@ -159,13 +166,14 @@ au InsertLeave * let &updatetime=updaterestore
 
 call plug#begin('~/.vim/plugged')
 Plug 'arcticicestudio/nord-vim'
+Plug 'jiangmiao/auto-pairs'
 call plug#end()
 
-" set background=dark
+set background=dark
 colorscheme nord
 
 " set  background color to none
-" hi Normal ctermbg=NONE
+hi Normal ctermbg=NONE guibg=NONE
 " hi LineNr ctermbg=NONE guibg=NONE
 " hi Comment ctermfg=darkgray guifg=darkgray
 " hi SignColumn ctermbg=NONE
