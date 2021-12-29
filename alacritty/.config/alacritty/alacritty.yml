@@ -25,6 +25,11 @@ font:
 
   size: 8.5
 
+cursor:
+  style:
+    blinking: Always
+  blink_interval: 500
+
 import:
   - ~/.config/alacritty/themes/onenord.yml
 
