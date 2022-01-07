@@ -5,7 +5,7 @@
 #   ▄▀▀▄    █    █  █ █   █      █    █   ▀▄ █     
 #  ▄▀  ▀▄ ▄▄█▄▄  █   ██ ▄▄█▄▄    █    █    ▀  ▀▄▄▄▀
 # 
-# Michael Espeña (https://gitlab.com/paperbackwriter/dotfiles)
+# Michael Espeña (https://gitlab.com/arcendian/dotfiles)
 
 userresources=$HOME/.Xresources
 usermodmap=$HOME/.Xmodmap

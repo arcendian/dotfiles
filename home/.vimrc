@@ -5,7 +5,7 @@
 "   ▀▄▄▀    █    █ ▀▀ █ █   ▀▄ █
 "    ██   ▄▄█▄▄  █    █ █    ▀  ▀▄▄▄▀
 " 
-" Michael Espeña (https://gitlab.com/paperbackwriter/dotfiles)
+" Michael Espeña (https://gitlab.com/arcendian/dotfiles)
 
 " sane defaults
 set tabstop=4

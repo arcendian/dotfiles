@@ -5,7 +5,7 @@
 #   ▄▀        ▀█ █    █ █   ▀▄ █
 #  ██▄▄▄▄ ▀▄▄▄█▀ █    █ █    ▀  ▀▄▄▄▀
 #
-# Michael Espeña (https://gitlab.com/paperbackwriter/.dotfiles)
+# Michael Espeña (https://gitlab.com/arcendian/.dotfiles)
 
 # Enable colors
 autoload -U colors && colors
