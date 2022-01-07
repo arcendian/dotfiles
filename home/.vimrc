@@ -167,6 +167,8 @@ au InsertLeave * let &updatetime=updaterestore
 call plug#begin('~/.vim/plugged')
 Plug 'arcticicestudio/nord-vim'
 Plug 'jiangmiao/auto-pairs'
+Plug 'Tetralux/odin.vim'
+Plug 'zah/nim.vim'
 call plug#end()
 
 set background=dark
@@ -185,3 +187,7 @@ hi Normal ctermbg=NONE guibg=NONE
 let &fcs='eob: '
 
 ab myemail michaelespena.public@gmail.com
+
+let &t_SI = "\<Esc>[6 q"
+let &t_SR = "\<Esc>[4 q"
+let &t_EI = "\<Esc>[2 q"

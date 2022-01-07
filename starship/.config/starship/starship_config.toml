@@ -1,17 +1,16 @@
-# Inserts a blank line between shell prompts
+# Michael Espeña (https://gitlab.com/paperbackwriter/dotfiles)
+
 add_newline = false
 
-# Wait 10 milliseconds for starship to check files under the current directory.
 scan_timeout = 10
 
-# disable two-line prompt
 [line_break]
-disabled = false
+disabled = true
 
-# Replace the "❯" symbol in the prompt with "➜"
-[character] # The name of the module we are configuring is "character"
-success_symbol = "[ ](bold blue)"
-error_symbol = "[ ](bold red)"
+[character]
+success_symbol = "[ ](bold blue)"
+error_symbol = "[ ](bold red)"
+
 
 [cmd_duration]
 disabled = true

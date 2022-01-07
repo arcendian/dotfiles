@@ -35,6 +35,8 @@ test -r ~/.dir_colors && eval $(dircolors ~/.dir_colors)
 
 PS1='[\u@\h \W]\$ '
 
+bind 'TAB:menu-complete'
+
 # =============================================================================
 #
 # Utility functions for zoxide.
