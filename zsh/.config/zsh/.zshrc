@@ -173,3 +173,9 @@ function zi() {
 eval "$(zoxide init zsh)"
 
 source /home/mice/.config/broot/launcher/bash/br
+
+
+# enable scrollback in vterm
+if [[ "$INSIDE_EMACS" = 'vterm' ]]; then
+    alias clear='vterm_printf "51;Evterm-clear-scrollback";tput clear'
+fi
