@@ -162,3 +162,5 @@ fi
 # Initialize zoxide
 #
 eval "$(zoxide init bash)"
+
+source /home/mice/.config/broot/launcher/bash/br

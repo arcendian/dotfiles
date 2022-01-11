@@ -187,6 +187,7 @@ hi Normal ctermbg=NONE guibg=NONE
 let &fcs='eob: '
 
 ab myemail michaelespena.public@gmail.com
+ab myname Michael Espeña
 
 let &t_SI = "\<Esc>[6 q"
 let &t_SR = "\<Esc>[4 q"
