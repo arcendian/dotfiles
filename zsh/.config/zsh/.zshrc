@@ -171,3 +171,5 @@ function zi() {
 # Initialize zoxide
 #
 eval "$(zoxide init zsh)"
+
+source /home/mice/.config/broot/launcher/bash/br
