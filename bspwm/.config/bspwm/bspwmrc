@@ -21,6 +21,7 @@ bspc rule -a Emacs state=tiled desktop='^9' follow=on
 bspc rule -a discord state=tiled desktop='^3' follow=on
 bspc rule -a mpv state=tiled desktop='^4' follow=on
 bspc rule -a Zathura state=tiled
+bspc rule -a qemu-system-x86_64 state=tiled follow=on desktop='^5'
 
 # colors
 bspc config normal_border_color "#4C566A"
