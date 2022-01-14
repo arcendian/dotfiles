@@ -11,12 +11,22 @@ disabled = true
 success_symbol = "[ ](bold blue)"
 error_symbol = "[ ](bold red)"
 
+[username]
+style_user = "purple bold"
+style_root = "red bold"
+format = "[$user]($style) "
+disabled = false
+show_always = true
 
 [cmd_duration]
 disabled = true
 
 [battery]
-disabled = true
+disabled = false
+
+[[battery.display]]
+threshold = 15
+style = "bold red"
 
 [cmake]
 disabled = true
